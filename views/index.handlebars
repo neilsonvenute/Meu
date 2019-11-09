@@ -1,5 +1,6 @@
-<div class="card" style="height: 530px; margin-top: 60px;">
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="height: 500px;">
+<div class="card " style="margin-top: 60px;">
+    <div class="card-header bg-dark text-white"><strong>Solução rápida e segura!</strong></div>
+    <div id="carouselExampleIndicators" class="carousel slide d-none d-lg-block" data-ride="carousel" style="height: 500px;">
         <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -7,13 +8,13 @@
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="../img/p1.jpg" class="d-block w-100" alt="..." >
+                <img src="../img/p1.jpg" class="d-block w-100 h-100" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="../img/p2.jpg" class="d-block w-100" alt="..." >
+                <img src="../img/p2.jpg" class="d-block w-100 h-100" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="../img/p5.png" class="d-block w-100" alt="...">
+                <img src="../img/p5.png" class="d-block w-100 h-100" alt="...">
             </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -25,14 +26,24 @@
             <span class="sr-only">Next</span>
         </a>
     </div>
-    
-        
-    
 </div>
-<div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="Procure um aqui um profissional" aria-label="Recipient's username"
-                aria-describedby="button-addon2">
+
+<div class="card mt-2"  style="margin-top: 12rem;">
+    <div class="card-header bg-dark text-white">
+        <h5 class="card-title text-warning">Pesquisar profissional</h5>
+    </div>
+    <div class="card-body" align="center">
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Encontrar profissional"
+                aria-label="Recipient's username" aria-describedby="button-addon2" autofocus="true">
             <div class="input-group-append">
-                <button class="btn btn-outline-secondary" type="button" id="button-addon2">Pesquisar</button>
+                
+                <a href="/professional/busca" class="btn btn-outline-secondary">
+                        <i class="fas fa-search"></i></a>
             </div>
         </div>
+        <button class="btn btn-success mt-2">Domésticos</button>
+        <button class="btn btn-primary mt-2">Industriais</button>
+        <button class="btn btn-danger mt-2">Tecnologia</button>
+    </div>
+</div>
