@@ -8,6 +8,7 @@ const bodyParser = require('body-parser')
 
 const admini = require('./routes/admin')
 const professional = require('./routes/professional')
+const infor = require('./routes/informacao')
 
 //Congfiguração da engine
 app.engine('handlebars', handlebars({ defaultLayout: 'main' }))
@@ -22,7 +23,7 @@ app.use(express.static(path.join(__dirname, 'public')))
 
 app.use('/admin', admini)
 app.use('/professional', professional)
-
+app.use('/informacao', infor)
 //Rota Principal
 app.get('/', (req, res) => {
     res.render('index')

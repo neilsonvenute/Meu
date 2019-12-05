@@ -1,6 +1,8 @@
+<link rel="stylesheet" href="/css/index.css" type="text/css">
 <div class="card " style="margin-top: 60px;">
-    <div class="card-header bg-dark text-white"><strong>Solução rápida e segura!</strong></div>
-    <div id="carouselExampleIndicators" class="carousel slide d-none d-lg-block" data-ride="carousel" style="height: 500px;">
+    <div class="card-header bg-light" id="titulo-superior"><strong>Solução rápida e segura!</strong></div>
+    <div id="carouselExampleIndicators" class="carousel slide d-none d-lg-block" data-ride="carousel"
+        style="height: 500px;">
         <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -8,13 +10,13 @@
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="../img/p1.jpg" class="d-block w-100 h-100" alt="...">
+                <img src="../img/p3.jpg" class="d-block w-100 h-100" alt="...">
             </div>
             <div class="carousel-item">
                 <img src="../img/p2.jpg" class="d-block w-100 h-100" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="../img/p5.png" class="d-block w-100 h-100" alt="...">
+                <img src="../img/p1.jpg" class="d-block w-100 h-100" alt="...">
             </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -28,22 +30,23 @@
     </div>
 </div>
 
-<div class="card mt-2"  style="margin-top: 12rem;">
-    <div class="card-header bg-dark text-white">
-        <h5 class="card-title text-warning">Pesquisar profissional</h5>
+<div class="card mt-2" style="margin-top: 12rem;">
+    <div class="card-header ">
+        <strong>Pesquisar profissional</strong>
     </div>
     <div class="card-body" align="center">
         <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="Encontrar profissional"
-                aria-label="Recipient's username" aria-describedby="button-addon2" autofocus="true">
+            <input type="text" class="form-control" placeholder="Faxineiro" aria-label="Recipient's username"
+                aria-describedby="button-addon2">
             <div class="input-group-append">
-                
-                <a href="/professional/busca" class="btn btn-outline-secondary">
-                        <i class="fas fa-search"></i></a>
+                <a href="/professional/busca">
+                <button class="btn btn-dark" type="button" id="button-addon2">
+                    <i class="fas fa-search"></i> Buscar</button>
+                </a>
             </div>
         </div>
-        <button class="btn btn-success mt-2">Domésticos</button>
-        <button class="btn btn-primary mt-2">Industriais</button>
-        <button class="btn btn-danger mt-2">Tecnologia</button>
+        <button class="btn btn-dark mt-2"><i class="fas fa-home"></i> Domésticos</button>
+        <button class="btn btn-dark mt-2"><i class="fas fa-industry"></i> Industriais</button>
+        <button class="btn btn-dark mt-2"><i class="fas fa-memory"></i> Tecnologia</button>
     </div>
 </div>
